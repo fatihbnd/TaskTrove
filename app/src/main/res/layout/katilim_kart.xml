@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue">
+
+    <View
+        android:id="@+id/midBlock"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:background="@drawable/oval"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <View
+        android:id="@+id/inMidBlock"
+        android:layout_width="320dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/midBlock"
+        app:layout_constraintStart_toStartOf="@+id/midBlock"
+        app:layout_constraintTop_toTopOf="@+id/midBlock" />
+
+    <View
+        android:id="@+id/container"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/inMidBlock"
+        app:layout_constraintStart_toStartOf="@+id/inMidBlock"
+        app:layout_constraintTop_toTopOf="@+id/inMidBlock"/>
+
+    <View
+        android:id="@+id/inContainer"
+        android:layout_width="90dp"
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/container"
+        app:layout_constraintStart_toStartOf="@+id/container"
+        app:layout_constraintTop_toTopOf="@+id/inMidBlock" />
+
+    <View
+        android:id="@+id/icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/yuvarlak"
+        app:layout_constraintBottom_toBottomOf="@+id/inContainer"
+        app:layout_constraintStart_toStartOf="@+id/container"
+        app:layout_constraintTop_toTopOf="@+id/inContainer" />
+
+    <View
+        android:id="@+id/coin"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:background="@drawable/coin1"
+        app:layout_constraintBottom_toBottomOf="@+id/container"
+        app:layout_constraintEnd_toEndOf="@+id/container"
+        app:layout_constraintTop_toTopOf="@+id/inMidBlock" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        app:layout_constraintEnd_toEndOf="@+id/inMidBlock"
+        app:layout_constraintStart_toStartOf="@+id/inMidBlock"
+        app:layout_constraintTop_toBottomOf="@+id/container" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/icon"
+        app:layout_constraintEnd_toEndOf="@+id/icon"
+        app:layout_constraintStart_toStartOf="@+id/container"
+        app:layout_constraintTop_toTopOf="@+id/icon"
+        app:srcCompat="@drawable/hesap" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Takım"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/inContainer"
+        app:layout_constraintEnd_toEndOf="@+id/inContainer"
+        app:layout_constraintStart_toStartOf="@+id/container"
+        app:layout_constraintTop_toTopOf="@+id/inContainer" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="165dp"
+        android:layout_height="20dp"
+        android:text="100 Müşteriyi Mutlu Et"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/inMidBlock"
+        app:layout_constraintTop_toBottomOf="@+id/container" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/inMidBlock"
+        app:layout_constraintStart_toStartOf="@+id/inMidBlock"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/inMidBlock"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="83dp"
+        android:layout_height="19dp"
+        app:layout_constraintBottom_toBottomOf="@+id/inMidBlock"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:srcCompat="@drawable/avatars" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="+53 Kişi Katıldı"
+        android:textSize="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/inMidBlock"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <ImageButton
+        android:id="@+id/imageButton14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/midBlock"
+        app:layout_constraintEnd_toEndOf="@+id/midBlock"
+        app:layout_constraintStart_toStartOf="@+id/midBlock"
+        app:layout_constraintTop_toBottomOf="@+id/inMidBlock"
+        app:srcCompat="@drawable/kaydol" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="31dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/coin"
+        app:layout_constraintStart_toStartOf="@+id/coin"
+        app:layout_constraintTop_toTopOf="@+id/coin"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/jeton" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:text="20 TASK"
+        app:layout_constraintBottom_toBottomOf="@+id/coin"
+        app:layout_constraintEnd_toEndOf="@+id/container"
+        app:layout_constraintTop_toTopOf="@+id/coin"
+        android:textStyle="bold"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
